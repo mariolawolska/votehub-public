@@ -7,6 +7,18 @@ This repository contains a curated selection of frontend and backend code sample
 The goal is to provide a focused, high‑signal overview of how I design, structure, and deliver production‑ready features.
 
 ---
+## 🔹 Deployed Services
+
+Below are the publicly accessible interfaces of the project:
+
+- **Frontend (React / Vite)**  
+  https://node.marbar.co.uk/
+
+- **Backend (Laravel UI / Admin / Landing)**  
+  https://laravel.marbar.co.uk/
+
+> These endpoints are provided for demonstration purposes and may not include the full production configuration.
+
 
 ## 🔹 Engineering Focus
 
