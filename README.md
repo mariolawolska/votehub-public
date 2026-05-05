@@ -69,7 +69,7 @@ The backend samples illustrate:
 - `Http/Controllers/` – clean, minimal controllers  
 - `Models/` – domain models with expressive relationships  
 - `Resources/` – structured API response formatting  
-
+- `Routes/` –  clearly separated Web (session) and API (JWT) routing layers 
 ---
 
 ## 🔹 Documentation
