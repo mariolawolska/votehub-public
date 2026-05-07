@@ -1,99 +1,160 @@
-# Votehub-public
-Full‑stack API-driven movie voting platform built with Laravel and React. Includes Google OAuth login, TMDB API integration, an admin panel, WebP image optimisation pipeline, and a modern frontend with filtering, sorting, comments and voting. This public version showcases architecture, code structure and selected features for technical review
+🌟 VoteHub Public — Senior‑Level Full‑Stack Architecture Overview
+VoteHub is a modern, API‑driven movie discovery and voting platform, designed and implemented with a strong focus on scalability, modularity and clean system boundaries.
+This public repository presents selected parts of the architecture to demonstrate how I design, structure and deliver production‑ready features as a Senior Full‑Stack Engineer.
 
-# Curated Code Highlights (Senior-Level Showcase)
+To nie jest demo — to wycinek realnej architektury, pokazujący sposób myślenia, decyzje techniczne i standardy inżynierskie.
 
-This repository contains a curated selection of frontend and backend code samples demonstrating my engineering standards, architectural thinking, and approach to building scalable, maintainable systems.  
-The goal is to provide a focused, high‑signal overview of how I design, structure, and deliver production‑ready features.
+🚀 What This Repository Represents
+This project highlights how I approach:
 
----
-## 🔹 Deployed Services
+end‑to‑end feature ownership
 
-Below are the publicly accessible interfaces of the project:
+system design and modular architecture
 
-- **Frontend (React / Vite)**  
-  https://node.marbar.co.uk/
+clean API boundaries between independent platforms
 
-- **Backend (Laravel UI / Admin / Landing)**  
-  https://laravel.marbar.co.uk/
+predictable data flow and resource modelling
 
-> These endpoints are provided for demonstration purposes and may not include the full production configuration.
+secure authentication flows (JWT + OAuth + session)
 
+performance‑aware frontend and backend design
 
-## 🔹 Engineering Focus
+maintainable, testable code with clear intent
 
-The included files highlight my approach to:
-- Clean, modular architecture  
-- Separation of concerns and reusable abstractions  
-- Predictable data flow and state management  
-- Testable, maintainable code with clear intent  
-- Performance‑aware design (frontend and backend)  
-- Consistent API structure and resource modelling  
+VoteHub is built the way I build real products:
+clear separation of concerns, scalable patterns, and production‑ready decisions.
 
-These samples are extracted from real production‑grade work and represent the patterns I use daily as a Senior Full‑Stack Engineer.
+🌐 Live Demo
+Frontend (React / Vite SPA)
+https://node.marbar.co.uk/
 
----
+Backend (Laravel API + Admin Panel)
+https://laravel.marbar.co.uk/
 
-## 🔹 Frontend (React / Vite)
+These environments are provided for architectural and technical review.
 
-The frontend examples demonstrate:
-- Reusable hooks encapsulating business logic  
-- Stateless, composable UI components  
-- Utilities designed for clarity and testability  
-- Predictable state management and clean props API  
-- Unit tests validating logic, edge cases and data flow  
-- Page‑level composition and routing structure  
+🧩 High‑Level Architecture
+VoteHub consists of two independent platforms communicating through a clean REST API:
 
-**Included examples:**
-- `hooks/` – filtering, sorting, debouncing, data transformation  
-- `hooks/__tests__/` – unit tests for hooks (Vitest/Jest)  
-- `components/` – UI components with controlled state and clean props API
-- `components/__tests__/` – unit tests for components (Vitest/Jest)  
-- `utils/` – pure functions used across the application
-- `utils/__tests__/` – unit tests for utils (Vitest/Jest)
-- `pages/` – page‑level composition, data orchestration and layout structure  
+Frontend (React + Vite)
+A modern SPA designed for performance and clarity:
 
----
+JWT authentication
 
-## 🔹 Backend (Laravel)
+filtering, sorting, debouncing, autosuggest
 
-The backend samples illustrate:
-- Service‑oriented architecture  
-- Controllers focused on orchestration, not business logic  
-- Resource classes ensuring consistent API responses  
-- Eloquent models with scopes, casts and relationships  
-- Clear separation between domain logic and HTTP layer  
+category popularity charts
 
-**Included examples:**
-- `Services/` – encapsulated business logic  
-- `Http/Controllers/` – clean, minimal controllers  
-- `Models/` – domain models with expressive relationships  
-- `Resources/` – structured API response formatting  
-- `Routes/` –  clearly separated Web (session) and API (JWT) routing layers 
----
+WebP‑optimised images
 
-## 🔹 Documentation
+reusable hooks encapsulating business logic
 
-To provide context around the code samples, the repository includes:
-- `architecture.md` – high‑level overview of system structure and design decisions  
-- `tests.md` – explanation of testing strategy, tooling and examples  
+stateless, composable UI components
 
----
+predictable state management
 
-## 🎯 Purpose of This Repository
+pure utilities with full test coverage
 
-This is not a full application.  
-It is a **deliberately curated selection** of files that best represent my work as a senior engineer, including:
+Backend (Laravel API)
+A structured, service‑oriented backend providing:
 
-- architectural decision‑making  
-- code quality and readability  
-- testing discipline  
-- frontend and backend design patterns  
-- ability to build scalable, maintainable features end‑to‑end  
+REST API with consistent resource modelling
 
----
+JWT authentication for the frontend
 
-## 📩 Contact
+TMDB API integrations
 
-If you would like to discuss any part of the code or architecture, feel free to reach out.
+category popularity aggregation
 
+WebP image optimisation pipeline
+
+clear separation of Web (session) and API (JWT) layers
+
+controllers focused on orchestration, not logic
+
+expressive Eloquent models with scopes and relationships
+
+Admin Panel (Laravel Blade)
+A secure, role‑isolated administrative interface with:
+
+Google OAuth login
+
+Laravel session login (email + password)
+
+full CRUD for movies, categories and metadata
+
+separate authentication flow from the public SPA
+
+This separation ensures strong security and clean boundaries between public and administrative responsibilities.
+
+🔥 Senior‑Level Engineering Focus
+The code samples in this repository highlight:
+
+clean, modular architecture
+
+reusable abstractions and predictable patterns
+
+separation of concerns across layers
+
+testable logic with clear intent
+
+performance‑aware design decisions
+
+consistent API structure and domain modelling
+
+real‑world engineering practices used in production systems
+
+This is the way I design and deliver features as a senior engineer — with clarity, scalability and long‑term maintainability in mind.
+
+📦 Frontend (React / Vite)
+Included examples demonstrate:
+
+reusable hooks for filtering, sorting, debouncing, data transformation
+
+stateless UI components with clean props API
+
+pure utilities with unit tests
+
+predictable state management
+
+page‑level orchestration and routing structure
+
+Vitest/Jest tests for hooks, utils and components
+
+🛠 Backend (Laravel)
+Included backend samples illustrate:
+
+service‑oriented architecture
+
+controllers focused on orchestration
+
+resource classes for consistent API responses
+
+expressive Eloquent models with scopes, casts and relationships
+
+clean routing structure (Web vs API)
+
+domain logic separated from HTTP layer
+
+📚 Documentation Included
+architecture.md — system structure, reasoning and design decisions
+
+tests.md — testing strategy and examples
+
+🎯 Purpose of This Public Version
+This repository is intentionally curated to provide a clear, senior‑level view of:
+
+how I design systems
+
+how I structure codebases
+
+how I approach maintainability and scalability
+
+how I think about architecture and boundaries
+
+how I deliver production‑ready features end‑to‑end
+
+It’s a focused, high‑value representation of my engineering approach.
+
+📩 Contact
+If you’d like to discuss the architecture, design decisions or implementation details, feel free to reach out.
